@@ -1,0 +1,123 @@
+============================================
+EXPERIMENT E — VGG19 T1 (baseline)
+Job ID    : 5433535
+Node      : orfoz207
+CPUs      : 56
+Start     : Thu Mar 26 11:50:32 PM +03 2026
+============================================
+
+Environment verification:
+/arf/sw/apps/truba-ai/gpu/miniforge3-2024/envs/gpu-2024.0/bin/python
+PyTorch: 2.1.0.post301, CUDA: False
+Model name:                      Intel(R) Xeon(R) Platinum 8480+
+Thread(s) per core:              1
+Core(s) per socket:              56
+Socket(s):                       2
+NUMA node(s):                    8
+NUMA node0 CPU(s):               0-13
+NUMA node1 CPU(s):               14-27
+NUMA node2 CPU(s):               28-41
+NUMA node3 CPU(s):               42-55
+NUMA node4 CPU(s):               56-69
+NUMA node5 CPU(s):               70-83
+NUMA node6 CPU(s):               84-97
+NUMA node7 CPU(s):               98-111
+Models  : vgg19
+Threads : 1
+
+Experiment E started at: 2026-03-26T23:52:29.054639
+Output directory: /arf/scratch/oeyecioglu/CUDA_CNN/experiment_e/ExpE_run_20260326_235229
+Log file: /arf/scratch/oeyecioglu/CUDA_CNN/experiment_e/experiment_e_20260326_235229.log
+
+Device: CPU only (CUDA_VISIBLE_DEVICES disabled)
+======================================================================
+SYSTEM SPECIFICATIONS
+======================================================================
+Hostname        : orfoz207
+Platform        : Linux-5.14.0-284.30.1.el9_2.x86_64-x86_64-with-glibc2.34
+CPU             : x86_64
+CPU cores       : 112
+RAM             : 251.1 GB
+CPU model       : Intel(R) Xeon(R) Platinum 8480+
+  Core(s) per socket:              56
+  Socket(s):                       2
+  L1d cache:                       5.3 MiB (112 instances)
+  L1i cache:                       3.5 MiB (112 instances)
+  L2 cache:                        224 MiB (112 instances)
+  L3 cache:                        210 MiB (2 instances)
+  NUMA node(s):                    8
+  NUMA node0 CPU(s):               0-13
+  NUMA node1 CPU(s):               14-27
+  NUMA node2 CPU(s):               28-41
+  NUMA node3 CPU(s):               42-55
+  NUMA node4 CPU(s):               56-69
+  NUMA node5 CPU(s):               70-83
+  NUMA node6 CPU(s):               84-97
+  NUMA node7 CPU(s):               98-111
+PyTorch version : 2.1.0.post301
+CUDA available  : False
+MKL available   : True
+OpenMP available: True
+======================================================================
+
+Hyperparameters:
+  num_classes: 3
+  class_names: ['all_snow', 'no_snow', 'partial']
+  image_size: 192
+  batch_size: 32
+  num_epochs: 15
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+  thread_counts: [1]
+  models: ['vgg19']
+
+======================================================================
+MODEL: vgg19 | THREADS: 1
+======================================================================
+  torch.num_threads   : 1
+  OMP_NUM_THREADS     : 1
+  DataLoader workers  : 0
+  Dataset split : Train=2098, Val=449, Test=453
+  Class weights : [0.6344494819641113, 0.23445101082324982, 2.1310994625091553]
+  Num workers   : 0
+  Epoch   1/15 | TrLoss: 0.2146 TrAcc: 0.9500 | VaLoss: 0.0352 VaAcc: 0.9911 | 2347.21s (0.9 img/s)
+  Epoch   2/15 | TrLoss: 0.0938 TrAcc: 0.9690 | VaLoss: 0.0271 VaAcc: 0.9978 | 7108.43s (0.3 img/s)
+  Epoch   3/15 | TrLoss: 0.0029 TrAcc: 0.9986 | VaLoss: 0.0067 VaAcc: 0.9978 | 11833.54s (0.2 img/s)
+  Epoch   4/15 | TrLoss: 0.1173 TrAcc: 0.9814 | VaLoss: 0.1602 VaAcc: 0.9332 | 10873.08s (0.2 img/s)
+  Epoch   5/15 | TrLoss: 0.0740 TrAcc: 0.9747 | VaLoss: 0.1995 VaAcc: 0.9599 | 7958.76s (0.3 img/s)
+  Epoch   6/15 | TrLoss: 0.1118 TrAcc: 0.9762 | VaLoss: 0.0531 VaAcc: 0.9844 | 6469.89s (0.3 img/s)
+  Epoch   7/15 | TrLoss: 0.0774 TrAcc: 0.9857 | VaLoss: 0.0035 VaAcc: 1.0000 | 8376.98s (0.3 img/s)
+  Epoch   8/15 | TrLoss: 0.0111 TrAcc: 0.9943 | VaLoss: 0.0052 VaAcc: 0.9978 | 7614.58s (0.3 img/s)
+  Epoch   9/15 | TrLoss: 0.0033 TrAcc: 0.9986 | VaLoss: 0.0117 VaAcc: 0.9978 | 10715.05s (0.2 img/s)
+  Epoch  10/15 | TrLoss: 0.0009 TrAcc: 0.9995 | VaLoss: 0.0153 VaAcc: 0.9955 | 11393.89s (0.2 img/s)
+  Epoch  11/15 | TrLoss: 0.0002 TrAcc: 1.0000 | VaLoss: 0.0003 VaAcc: 1.0000 | 14908.36s (0.1 img/s)
+  Epoch  12/15 | TrLoss: 0.0000 TrAcc: 1.0000 | VaLoss: 0.0013 VaAcc: 1.0000 | 14976.42s (0.1 img/s)
+  Epoch  13/15 | TrLoss: 0.0000 TrAcc: 1.0000 | VaLoss: 0.0021 VaAcc: 0.9978 | 13968.62s (0.2 img/s)
+  Epoch  14/15 | TrLoss: 0.0000 TrAcc: 1.0000 | VaLoss: 0.0034 VaAcc: 0.9978 | 11866.52s (0.2 img/s)
+  Epoch  15/15 | TrLoss: 0.0000 TrAcc: 1.0000 | VaLoss: 0.0027 VaAcc: 0.9978 | 10370.36s (0.2 img/s)
+
+  TEST: Acc=1.0000 F1=1.0000 Prec=1.0000 Rec=1.0000 AUC=1.0000
+  Confusion Matrix: [[113, 0, 0], [0, 305, 0], [0, 0, 35]]
+  HPC: Time=150782.70s Throughput=0.21 img/s CPU_Util=47.4%
+
+Summary CSV saved to: /arf/scratch/oeyecioglu/CUDA_CNN/experiment_e/ExpE_run_20260326_235229/experiment_e_summary.csv
+
+Plots saved to: /arf/scratch/oeyecioglu/CUDA_CNN/experiment_e/ExpE_run_20260326_235229/plots
+
+======================================================================
+EXPERIMENT E FINAL SUMMARY
+======================================================================
+Model       Threads    Time(s)  Speedup    Effic    Thruput     Acc      F1       fs
+------------------------------------------------------------------------------------------
+vgg19             1  150782.70    1.000   1.0000       0.21  1.0000  1.0000   0.0000
+
+Experiment E completed at: 2026-03-28T17:47:18.236671
+All results in: /arf/scratch/oeyecioglu/CUDA_CNN/experiment_e/ExpE_run_20260326_235229
+
+============================================
+Experiment E VGG19 T1 finished at: Sat Mar 28 05:47:26 PM +03 2026
+============================================
