@@ -122,6 +122,6 @@ Girdi:
 
 Bu çalışmayı akademik araştırmalarınızda kullanmanız durumunda aşağıdaki kaynağa atıf yapmanız rica olunur:
 
-Turkan, A., Hangun, B. and Eyecioglu, O. (2026). HPC-Accelerated CNN Training for Solar Panel Snow Detection: A Comparative Analysis of Multi-threaded CPU and GPU Performance with VGG-19 and ResNet-50. *International Journal of Smart Grid*. (in press)
+Eyecioglu, Ö., Hangun, B., & Turkan, A. (2026). Accelerating Solar Panel Snow Detection: CPU vs. GPU Training Performance of VGG-19 and  ResNet-50. International Journal of Smart Grid - ijSmartGrid, 10(3), 191-208. https://doi.org/10.20508/ijsmartgrid.v10i3.815.g431
 
 İngilizce dokümantasyon için: [README.md](README.md)
